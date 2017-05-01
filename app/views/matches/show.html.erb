@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<%= image_tag @match.cards.first.image_url %>
+<%= @match.card_status[0] %>
+<%= image_tag @match.cards.last.image_url %>
+<%= @match.card_status[1] %>
+<br/>
+
+<%= link_to 'Edit', edit_match_path(@match) %> |
+<%= link_to 'Back', matches_path %>

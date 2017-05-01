@@ -1,0 +1,15 @@
+$ ->
+  # enable chosen js
+  $('.chosen-select').chosen
+    allow_single_deselect: true
+    no_results_text: 'No results matched'
+    width: '200px'
+    max_selected_options: 2
+
+  $('.chosen-select').chosen().on 'change', ->
+    values = []
+    $('.chosen-select').chosen().find(':selected').each ->
+      values.push($(this).data('image'))
+    $('.card-1').css('background-image', 'url('+values[0]+')');
+    $('.card-2').css('background-image', 'url('+values[1]+')');
+    

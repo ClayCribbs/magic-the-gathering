@@ -1,0 +1,18 @@
+<script>
+  $(function(){
+    $('#set_id').bind('change', function () {
+       var url = "../cards?selected_mtg_set=" + $(this).val()
+        if (url) {
+            window.location.replace(url);
+        }
+        return false;
+    });
+  });
+</script>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3 text-center">
+    <h1>Magic The Gathering Sets</h1>
+    <%= select_tag 'set_id', options_from_collection_for_select(@sets, "id", "name"), include_blank: true, class: 'chosen-select' %>
+  </div>
+</div>

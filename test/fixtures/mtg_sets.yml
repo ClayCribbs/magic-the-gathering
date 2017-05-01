@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  name: MyString
+  gatherer_code: MyString
+  old_code: MyString
+  magic_cards_info_code: MyString
+  release_date: MyString
+  border: MyString
+  set_type: MyString
+  block: MyString
+  online_only: MyString
+  booster: MyString
+  mkm_id: MyString
+  mkm_name: MyString
+
+two:
+  code: MyString
+  name: MyString
+  gatherer_code: MyString
+  old_code: MyString
+  magic_cards_info_code: MyString
+  release_date: MyString
+  border: MyString
+  set_type: MyString
+  block: MyString
+  online_only: MyString
+  booster: MyString
+  mkm_id: MyString
+  mkm_name: MyString
